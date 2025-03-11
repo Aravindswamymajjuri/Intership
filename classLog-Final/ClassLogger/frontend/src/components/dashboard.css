@@ -1,0 +1,112 @@
+.dashboard-container {
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .card-container {
+    margin-top: 20px;
+    background-color: #f9f6ff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .card-header {
+    display: flex;
+    flex-direction: column; /* Align text fields side by side */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .card-header .text-field {
+    margin-right: 20px; /* Create a gap between the fields */
+  }
+  
+  .card-header .subject-name,
+  .card-header .subject-grade {
+    margin-bottom: 10px;
+  }
+  
+  .button-container {
+    margin-top: 10px;
+  }
+  
+  .card-body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+  }
+  
+  .subject-card {
+    background-color: #e8e8e8;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+  
+  .card-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .text-field {
+    margin-right: 10px;
+  }
+  
+  .button {
+    margin-top: 10px;
+  }
+  
+  .subject-title
+  {
+   color: darkblue; 
+  }
+  
+  @media (max-width: 480px) {
+    .dashboard-container{
+        padding-top: 300px;
+    }
+    /* For mobile screens */
+    .dashboard-title {
+      font-size: 1.5rem; /* Even smaller title font size */
+    }
+  
+    .card-body {
+      grid-template-columns: 1fr; /* One column for mobile */
+    }
+  
+    .subject-card {
+      width: 90%; /* Ensure cards take full width on mobile */
+    }
+  
+    .card-header {
+      flex-direction: column; /* Stack fields vertically */
+    }
+  
+    .card-header .text-field {
+      margin-bottom: 15px;
+      width: 100%; /* Full width for input fields */
+    }
+  
+    .button-container {
+      margin-top: 20px;
+    }
+  }
+  
